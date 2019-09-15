@@ -1,67 +1,168 @@
-<!DOCTYPE html> 
-<html> 
-  <head> 
-  
-    <!-- CSS style to put div side by side -->
-    <style type="text/css"> 
-    .container { 
-      width:1210px; 
-      height:190px; 
-      background-color:white; 
-      padding-top:20px; 
-      padding-left:15px; 
-      padding-right:15px; 
-    } 
-    #st-box { 
-      float:left; 
-      width:380px; 
-      height:160px; 
-      background-color:orange; 
-      border:solid black; 
-    } 
-    #nd-box { 
-      float:left; 
-      width:380px; 
-      height:160px; 
-      background-color:red; 
-      border:solid black; 
-      margin-left:20px; 
-    } 
-    #rd-box { 
-      float:right; 
-      width:380px; 
-      height:160px; 
-      background-color:pink; 
-      border:solid black; 
-    } 
-    h1 { 
-      color:Green; 
-    } 
-    </style> 
-  </head> 
-  
-  <body> 
-    <center> 
-    <h1>Our Menu</h1> 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Module 2 Solution</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+    <style>
+      * { box-sizing: border-box;
+ }
+ h1 {
+  margin-bottom: 15px;
+  text-align: center;
+ }
+ p{
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  font-family: Arial,helvitica, sans-serif;
+ }
+ .row{
+  width: 100%;
+ }
+ #c1,#c2,#c3{
+  background-color: gray;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  position: relative;
+ }
+ .right {
+  float:right;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 60px;
+  border: 1px solid black;
+  font-style: italic;
+  text-align: center;
+ }
+ #mt1{
+  background-color: #00ff00;
+ }
+ #mt2{
+  background-color: #ff0000;
+ }
+ #mt3{
+  background-color: #0000ff;
+ }
+
+
+
+ @media(min-width: 992px) {
+  .col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9.col-lg-10,.col-lg-11,.col-lg-12 {
+  float:left;
+ }
+ .col-lg-1 {
+  width: 8.33%;
+ }
+ .col-lg-2 {
+  width:16.66%;
+ }
+ .col-lg-3 {
+  width: 25%;
+ }
+.col-lg-4 {
+  width: 33.33%;
+}
+.col-lg-5 {
+  width:41.66%;
+}
+.col-lg-6 {
+  width: 50%;
+}
+.col-lg-7 {
+  width: 58.33%;
+}
+.col-lg-8 {
+  width: 66.66%;
+}
+.col-lg-9 {
+  width: 74.99%;
+}
+.col-lg-10 {
+  width: 83.33%;
+}
+.col-lg-11 {
+  width: 91.66%; 
+}
+.col-lg-12 {
+  width: 100%;
+}
+}
+@media(min-width: 768px) and (max-width: 991px) {
+  .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9.col-md-10,.col-md-11,.col-md-12{
+  float: left;
+}
+.col-md-1 {
+  width: 8.33%;
+ }
+ .col-md-2 {
+  width:16.66%;
+ }
+ .col-md-3 {
+  width: 25%;
+ }
+.col-md-4 {
+  width: 33.33%;
+}
+.col-md-5 {
+  width:41.66%;
+}
+.col-md-6 {
+  width: 50%;
+}
+.col-md-7 {
+  width: 58.33%;
+}
+.col-md-8 {
+  width: 66.66%;
+}
+.col-md-9 {
+  width: 74.99%;
+}
+.col-md-10 {
+  width: 83.33%;
+}
+.col-md-11 {
+  width: 91.66%; 
+}
+.col-md-12 {
+  width: 100%;
+}
+#c3 {
+  width: 100%;
+}
+@media (max-width: 767px){
+
+}
+}
+  </style>
+  </head>
+<body>
+
+<h1>Our Menu</h1>
+
+  <div class="row">
+    <div id="c1" class="col-lg-4 col-md-6">
+      <div id="mt1" class="right">Chicken</div>
+      <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis.
+      </p>
+     </div>
     
-    <div class="container"> 
-      <div id="st-box"> 
-        <h2>checken</h2>
-              <p>It is too fun.But I don't able to code becouse it this time I am not reading properly due to my academic exam.I will try best.</p>
-      </div> 
-      
-      <div id="nd-box">
-      <h3>beef</h3> 
-        <p> 
-          It is too fun.But I don't able to code becouse it this time I am not reading properly due to my academic exam.I will try best. 
-        </p> 
-      </div> 
-      
-      <div id="rd-box"> 
-        <h4>sushi</h4>
-              <p>It is too fun.But I don't able to code becouse it this time I am not reading properly due to my academic exam.I will try best.</p> 
-      </div> 
-    </div> 
-    </center> 
-  </body> 
-</html>          
+    <div id="c2" class="col-lg-4 col-md-6">
+      <div id="mt2" class="right">Beef</div>
+      <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis.
+      </p>
+    </div>
+
+    <div id="c3" class="col-lg-4 col-md-6">
+      <div id="mt3" class="right">Sushi</div>
+      <p id="p3">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis.
+      </p>
+    </div>
+  </div>
+  
+</body>
+</html>
